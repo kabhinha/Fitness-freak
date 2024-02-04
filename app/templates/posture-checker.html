@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body %}
+
+<main id="main" data-aos="fade" data-aos-delay="1500">
+  
+  <!-- ======= End Page Header ======= -->
+  <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>Check Your Posture</h2>
+            <p>Introducing our cutting-edge Computer Vision-based AI Posture Checker – a revolutionary tool designed to elevate your well-being. Harnessing the power of artificial intelligence, this innovative system meticulously analyzes your body's alignment, offering real-time feedback to improve posture and alleviate discomfort.
+
+              Immerse yourself in a personalized journey toward better health as our AI Posture Checker discreetly observes your movements, providing insightful insights and corrective guidance. Say goodbye to the strain of poor posture and embrace the confidence that comes with standing tall and feeling great.</p>
+            </div>
+          <img src="{{url_for('video')}}" class="chat-container">
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+
+    <!-- ======= Services Section ======= -->
+
+  </main><!-- End #main -->
+  {% endblock body %}

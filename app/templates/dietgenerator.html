@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<main id="main" data-aos="fade" data-aos-delay="1500">
+
+  <!-- ======= End Page Header ======= -->
+  <div class="page-header exit">
+          <div class="main-page">
+            <h2>Diet Generator</h2>
+          <p>The AI meal planner application starts by asking users about their Height,Weight.</p>
+          <form class="diet_generator">
+              <div>
+                  <label class="diet_form_label" for="">Height</label>
+                  <input class="diet_form_input" type="number" id="height" placeholder="Enter height in centimeters" required>
+              </div>
+              <div>
+                  <label class="diet_form_label" for="">Weight</label>
+                  <input class="diet_form_input" type="number" id="weight" placeholder="Enter weight in kilograms" required>
+              </div>
+              <div>
+                  <label class="diet_form_label" for="">Choose Gender</label>
+                  <label class="diet_form_label">
+                      <input class="ee" type="radio" name="options" value="Male">Male
+                  </label>
+                  <label class="diet_form_label">
+                      <input class="ee" type="radio" name="options" value="Female">Female
+                  </label>
+              </div>
+              <div>
+                  <a class="cta-btn" id="generateBtn" onclick="calculateBMI()">Generate Diet</a>
+              </div>
+
+            </form>
+          </div>
+          <div class="chat-container">
+            <div id="chat" class="chat-box"></div>
+  </div><!-- End Page Header -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+
+  </section><!-- End Services Section -->
+
+ 
+
+  <!-- ======= Testimonials Section ======= -->
+  
+</main><!-- End #main -->
+
+{% endblock body %}
