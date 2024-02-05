@@ -1,5 +1,5 @@
 from flask import Flask,render_template,Response
-from app.poseEstimation import PoseDetector
+from poseEstimation import PoseDetector
 import cv2
 
 app=Flask(__name__)
