@@ -1,5 +1,5 @@
 from flask import Flask,render_template,Response
-from poseEstimation import PoseDetector
+from app.poseEstimation import PoseDetector
 import cv2
 
 app=Flask(__name__)
@@ -94,6 +94,4 @@ def checker():
 def video():
     return Response(check_posture(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-if __name__ == '__main__':
-    #DEBUG is SET to TRUE. CHANGE FOR PROD
-    app.run(port=5000,debug=True)
+
